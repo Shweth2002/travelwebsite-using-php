@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: lightgrey;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>PAYMENT</h1>
+
+<div class="container">
+  <form action="payment.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+    <label for="lname">EmailID</label>
+    <input type="text" id="email" name="email" placeholder="Your email id..">
+
+	<label for="lname">Address</label>
+    <input type="text" id="addresss" name="addresss" placeholder="Your Address..">
+
+    <label for="city">City</label>
+	<input type="text" id="city" name="city" placeholder="Enter Your City...">
+
+	<label for="state">State</label>
+    <select id="state" name="state">
+      <option value="Kerala">Kerala</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="TamilNadu">TamilNadu</option>
+	  <option value="AndraPradesh">AndraPradesh</option>
+	  <option value="Telangana">Telangana</option>
+	  <option value="Maharashtra">Maharashtra</option>
+    </select>
+
+    <label for="pin">Pin</label>
+    <input type="text" id="pin" name="pin" placeholder="Enter pin...">
+
+	Accepted Card <br>
+				<img src="image/card1.png" width="100">
+				<img src="image/card2.png" width="50">
+				<br><br>
+
+			<label for="cardno">Credit card number</label>
+			<input type="text" name="cardno" placeholder="Enter card number">
+				
+			<label for="eyr">Exp Year</label>
+						<select id="eyr" name="eyr">
+							<option>Choose Year</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+						</select>
+			<label>
+				<label for="cvv">CVV</label>	
+						<input type="text" name="cvv" placeholder="CVV">
+					
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
